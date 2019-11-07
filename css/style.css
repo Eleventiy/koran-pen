@@ -1762,7 +1762,8 @@ bdo{
 .b-footer-xs{
 	display: none;
 }
-.b-text-bottom{
+.b-text-bottom,
+.b-text-bottom-reviews {
 	display: none;
 }
 
@@ -3174,6 +3175,24 @@ bdo{
 	font-size: 18px;
 	line-height: 20px;
 	color: #000000;	
+}
+.b-reviews-textarea-block {
+	position: relative;
+}
+.b-reviews-emoji {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	display: flex;
+	align-items: center;
+}
+.b-reviews-emoji a {
+	flex: 0 0 100%;
+	max-width: 30px;
+	margin-right: 5px;
+}
+.b-reviews-emoji a:last-child {
+	margin-right: 0;
 }
 
 .b-reviews-form__bottom{
@@ -5316,4 +5335,9 @@ bdo{
 }
 .b-order-total-text {
 	margin-right: 65px;
+}
+.open-reviews-link {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }

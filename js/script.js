@@ -754,4 +754,15 @@ $('.btn-more[href*="#"]').click(function() {
       // instead of a settings object
     ]
   });
+
+  // Write code here
+  $('.open-reviews-link').click(function() {
+    if ($(this).hasClass('active')) {
+      $(this).removeClass('active');
+      $('.b-text-bottom-reviews').removeClass('open');
+    } else {
+      $(this).addClass('active');
+      $('.b-text-bottom-reviews').addClass('open');
+    }
+  });
 });
