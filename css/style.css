@@ -5148,22 +5148,12 @@ bdo{
 .b-profile-edit-form .b-cart-step__item__col {
 	padding: 0;
 }
+.b-profile-edit-form {
+	max-width: 480px;
+}
 .b-profile-edit-form__row {
 	display: flex;
 	align-items: center;
-}
-.b-profile-edit-form__link {
-	margin-left: 20px;
-	font-family: 'Lato-Regular', sans-serif;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1;
-	color: #DEC593;
-	transition: all 0.3s;
-}
-.b-profile-edit-form__link:hover {
-	color: #BC8822;
-	text-decoration: none;
 }
 .b-profile-edit-form__buttons {
 	display: flex;
@@ -5182,25 +5172,6 @@ bdo{
 /* -------------- page b-profile-password -------------- */
 .b-profile-password-page {
 	padding: 40px 0;
-}
-.b-profile-password-form {
-	max-width: 480px;
-}
-.b-profile-password-form .b-cart-step__item__col {
-	padding: 0;
-}
-.b-profile-password-form__buttons {
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-	max-width: 480px;
-}
-.b-profile-password-form__buttons .b-reviews-form__btn {
-	margin: 0;
-	margin-right: 20px;
-}
-.b-profile-password-form__buttons .b-reviews-form__btn:last-child {
-	margin-right: 0;
 }
 
 /* -------------- page b-profile-orders -------------- */

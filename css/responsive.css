@@ -188,9 +188,6 @@
 	.b-history-item{
 		padding-left: 87px !important;
 	}	
-	.b-profile-edit-form__buttons {
-		max-width: 357px;
-	}
 	.b-profile-orders__col--big {
 		max-width: 730px;
 	}
@@ -431,18 +428,7 @@
 		flex-direction: column;
 		align-items: flex-end;
 	}
-	.b-profile-edit-form__link {
-		margin-left: 0;
-		margin-top: 10px;
-	}
 	.b-profile-edit-form__buttons {
-		max-width: 100%;
-	}
-	.b-profile-password-form {
-		max-width: 100%;
-		margin-bottom: 40px;
-	}
-	.b-profile-password-form__buttons {
 		max-width: 100%;
 	}
 	.b-profile-orders__col--big {
@@ -1348,6 +1334,7 @@
 		margin-bottom: 30px;
 	}
 	.b-profile-edit-form {
+		max-width: 100%;
 		margin-bottom: 40px;
 	}
 	.b-profile-orders__col--small,
@@ -1414,17 +1401,14 @@
 	.b-main-video__wrap{
 		width: 290px;
 	}
-	.b-profile-edit-form__buttons,
-	.b-profile-password-form__buttons {
+	.b-profile-edit-form__buttons {
 		flex-direction: column;
 	}
-	.b-profile-edit-form__buttons .b-reviews-form__btn,
-	.b-profile-password-form__buttons .b-reviews-form__btn {
+	.b-profile-edit-form__buttons .b-reviews-form__btn {
 		margin-right: 0;
 		margin-bottom: 20px;
 	}
-	.b-profile-edit-form__buttons .b-reviews-form__btn:last-child,
-	.b-profile-password-form__buttons .b-reviews-form__btn:last-child {
+	.b-profile-edit-form__buttons .b-reviews-form__btn:last-child {
 		margin-bottom: 0;
 	}
 	.b-order-content__title {
