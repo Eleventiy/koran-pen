@@ -1762,7 +1762,8 @@ bdo{
 .b-footer-xs{
 	display: none;
 }
-.b-text-bottom {
+.b-text-bottom,
+.b-text-bottom-reviews { 
 	display: none;
 }
 

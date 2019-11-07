@@ -764,9 +764,10 @@ $('.btn-more[href*="#"]').click(function() {
   // });
 
   $('.open-reviews-link a').click(function() {
-    // $(this)
-    //   .parent()
-    //   .toggleClass('active');
+    $(this)
+      .parent()
+      .toggleClass('active');
+    $('.b-text-bottom-reviews').toggleClass('open');
     $('html, body').animate(
       {
         scrollTop: $($.attr(this, 'href')).offset().top
