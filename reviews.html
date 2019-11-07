@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Title</title>
+    <meta property="og:title" content="" /> 
+    <meta property="og:description" content="" />
+    <meta name="title" content="" /> 
+    <meta name="description" content="" /> 
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600|Roboto+Slab:400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+	<link href="css/slick.css" rel="stylesheet">
+	<link href="css/rating.css" rel="stylesheet">
+	<link href="css/fontawesome-all.css" rel="stylesheet">
+	<link href="css/jquery.fancybox.min.css" rel="stylesheet">
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="webfonts/fonts.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href=”images/favicon.ico” rel=”shortcut icon” type=”image/x-icon”>
+	<link rel="shortcut icon" href="#">
+	<link rel="shortcut icon" href="images/logo.svg" type="image/png" />	
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+
+
+<!-- modal-callback -->
+<div class="modal modal-callback fade" id="modal-callback" tabindex="-1" role="dialog" aria-labelledby="modal-callback" aria-hidden="true">
+  <div class="modal-dialog">
+		<button data-dismiss="modal" class="modal-close"></button>
+		<div class="b-modal-top">
+			<span>Обратный звонок</span>
+		</div>
+		<div class="b-modal-content">
+			<form action="">
+				<input class="b-cart-input" type="text" placeholder="Имя*">
+				<input class="b-cart-input b-tel" type="text" placeholder="Телефон*">
+				<textarea class="b-cart-textarea"></textarea>
+				<input class="b-modal-btn" type="submit" value="Отправить">
+			</form>
+		</div>
+    </div>
+  </div>
+
+
+<!-- modal-callback -->
+<div class="modal modal-callback fade" id="modal-reg" tabindex="-1" role="dialog" aria-labelledby="modal-reg" aria-hidden="true">
+  <div class="modal-dialog">
+		<button data-dismiss="modal" class="modal-close"></button>
+		<div class="b-modal-top">
+			<span>Регистрация</span>
+		</div>
+		<div class="b-modal-content">
+			<form action="">
+				<input class="b-cart-input" type="text" placeholder="Имя*">
+				<input class="b-cart-input" type="text" placeholder="Фамилия*">
+				<input class="b-cart-input b-tel" type="text" placeholder="Телефон*">
+				<input class="b-cart-input" type="text" placeholder="Эл. Почта">
+				<input class="b-modal-btn" type="submit" value="Зарегистрироваться">
+			</form>
+		</div>
+    </div>
+  </div>
+
+
+<!-- modal-callback -->
+<div class="modal modal-callback fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="modal-login" aria-hidden="true">
+  <div class="modal-dialog">
+		<button data-dismiss="modal" class="modal-close"></button>
+		<div class="b-modal-top">
+			<span>Вход</span>
+		</div>
+		<div class="b-modal-content">
+			<form action="">
+				<input class="b-cart-input" type="text" placeholder="Эл. Почта">
+				<input class="b-cart-input" type="text" placeholder="Пароль*">
+				<input class="b-modal-btn" type="submit" value="Войти">
+			</form>	
+			<div class="b-modal-top b-modal-top__two">
+				<span>Вход через соц сети</span>
+			</div>					
+			<ul>
+				<li><a href=""><i class="fab fa-vk"></i></a></li>
+				<li><a href=""><i class="fab fa-odnoklassniki"></i></a></li>
+				<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+				<li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+				<li><a href=""><i class="fab fa-twitter"></i></a></li>
+			</ul>
+		</div>
+    </div>
+  </div>
+
+
+  <!-- modal-callback -->
+<div class="modal b-modal-item fade" id="modal-item" tabindex="-1" role="dialog" aria-labelledby="modal-item" aria-hidden="true">
+  <div class="modal-dialog">
+		<button data-dismiss="modal" class="modal-close"></button>
+		<div class="b-modal-item__top">
+			<span>Корзина</span>
+		</div>
+		<div class="b-cart-item">
+			<div class="b-cart-item__block">
+				<div class="b-cart-item__img">
+					<img src="images/b-cart-item__img2.jpg" alt="">
+				</div>
+				<div class="b-cart-item__wrap">
+					<b>Электронная ручка PQ8800</b>
+					<ul>
+						<li>Тип упаковки:<span>Деревянная коробка</span></li>
+					</ul>
+					<p>+4 500 руб.</p>
+				</div>
+			</div>
+            <div class="b-quantity">
+                <button class="b-quantity-btn minus">-</button>
+                <input class="b-quantity-input" type="text" value="1">
+                <button class="b-quantity-btn plus">+</button>
+            </div>		
+            <div class="b-cart-item__price">
+            	<b>22 500 ₽</b>
+            </div>									
+		</div>
+    </div>
+  </div>
+
+<div class="b-container b-inner">
+	<!-- begin b-header -->
+	<header class="b-header ">
+		<div class="b-header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl">
+						<div class="b-header-nav">
+							<ul>
+								<li><a href="">О компании</a></li>
+								<li><a href="">Доставка и оплата </a></li>
+								<li><a href="">Акции</a></li>
+								<li><a href="">Новости</a></li>
+								<li><a href="">Отзывы</a></li>
+								<li><a href="">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="b-header-link">
+							<ul>
+								<li data-toggle="modal" data-target="#modal-login">Вход</li>
+								<li>/</li>
+								<li data-toggle="modal" data-target="#modal-reg">Регистрация</li>
+							</ul>
+							<button class="btn-share"></button>
+						</div>
+						<div class="b-header-xs">
+							<button class="btn-back"></button>
+							<a href="tel:8 800 456 78 90">8 800 456 78 90</a>
+							<button class="btn-share"></button>
+						</div>						
+						<div class="b-header-wrap"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="b-header-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl">
+						<div class="b-header-content__wrap">
+							<a href="" class="b-logo"></a>
+							<div class="b-header-contacts">
+								<div class="b-header-contacts__item">
+									<a href="tel:8 123 456 78 90">8 123 456 78 90</a>
+									<span></span>
+								</div>
+								<div class="b-header-contacts__item">
+									<a href="tel:8 800 456 78 90">8 800 456 78 90</a>
+									<span>бесплатный звонок по РФ</span>
+								</div>
+								<button class="btn-callback btn-yellow">Написать нам</button>							
+							</div>
+							<div class="b-header-cart__wrap">
+								<div class="b-header-cart">
+									<div class="b-header-cart__ico">
+										<div class="b-header-cart__n">
+											<span>2</span>
+										</div>
+									</div>
+									<div class="b-header-cart__content">
+										<span>Корзина:</span>
+										<p>35 899 ₽</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end b-header -->
+
+	<div class="b-breadcreambs">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl">
+					<ul>
+						<li><a href="">Главная</a><i>/</i></li>
+						<li><a href="">Отзывы</a><i>/</i></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<section class="b-reviews">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl">
+					<div class="b-title">
+						<div class="b-title-wrap">
+							<bdo dir="ltr">استعراض</bdo>
+						</div>
+						<h1>Отзывы</h1>
+					</div>
+					<div class="b-rev-top">
+							<ul class="nav">
+								<li><a data-toggle="tab" class="active" href="#tab11">Видео отзывы</a></li>
+								<li><a data-toggle="tab" href="#tab22">Отзывы</a></li>
+							</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="tab-content">
+				<div class="tab-pane active" id="tab11">
+					<div class="b-reviews-content">
+						<div class="container">
+							<div class="row">
+								<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+									<div class="b-reviews-item">
+										<div class="b-reviews-item__top">
+				                            <div class="star-rating">
+				                                <input type="radio" name="11" class="rating" value="1" disabled="disabled" checked />
+				                                <input type="radio" name="21" class="rating" value="2" checked />
+				                                <input type="radio" name="31" class="rating" value="3" checked />
+				                                <input type="radio" name="41" class="rating" value="4" checked />
+				                                <input type="radio" name="51" class="rating" value="5" />
+				                            </div>								
+											<span>2.08.2019</span>
+										</div>
+										<div class="b-news-item__img">
+											<iframe width="100%" height="176" src="https://www.youtube.com/embed/BKhV_p1r_MM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											<div class="b-news-item__img__wrap">
+												<button class="b-news-play"></button>
+											</div>
+										</div>
+										<div class="b-reviews-item__text">
+											<span>Видео отзыв от:</span>
+											<b>Оятуллох Кадиров </b>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+									<div class="b-reviews-item">
+										<div class="b-reviews-item__top">
+				                            <div class="star-rating">
+				                                <input type="radio" name="11" class="rating" value="1" disabled="disabled" checked />
+				                                <input type="radio" name="21" class="rating" value="2" checked />
+				                                <input type="radio" name="31" class="rating" value="3" checked />
+				                                <input type="radio" name="41" class="rating" value="4" checked />
+				                                <input type="radio" name="51" class="rating" value="5" />
+				                            </div>								
+											<span>2.08.2019</span>
+										</div>
+										<div class="b-news-item__img">
+											<iframe width="100%" height="176" src="https://www.youtube.com/embed/BKhV_p1r_MM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											<div class="b-news-item__img__wrap">
+												<button class="b-news-play"></button>
+											</div>
+										</div>
+										<div class="b-reviews-item__text">
+											<span>Видео отзыв от:</span>
+											<b>Оятуллох Кадиров </b>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+									<div class="b-reviews-item">
+										<div class="b-reviews-item__top">
+				                            <div class="star-rating">
+				                                <input type="radio" name="11" class="rating" value="1" disabled="disabled" checked />
+				                                <input type="radio" name="21" class="rating" value="2" checked />
+				                                <input type="radio" name="31" class="rating" value="3" checked />
+				                                <input type="radio" name="41" class="rating" value="4" checked />
+				                                <input type="radio" name="51" class="rating" value="5" />
+				                            </div>								
+											<span>2.08.2019</span>
+										</div>
+										<div class="b-news-item__img">
+											<iframe width="100%" height="176" src="https://www.youtube.com/embed/BKhV_p1r_MM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											<div class="b-news-item__img__wrap">
+												<button class="b-news-play"></button>
+											</div>
+										</div>
+										<div class="b-reviews-item__text">
+											<span>Видео отзыв от:</span>
+											<b>Оятуллох Кадиров </b>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+									<div class="b-reviews-item">
+										<div class="b-reviews-item__top">
+				                            <div class="star-rating">
+				                                <input type="radio" name="11" class="rating" value="1" disabled="disabled" checked />
+				                                <input type="radio" name="21" class="rating" value="2" checked />
+				                                <input type="radio" name="31" class="rating" value="3" checked />
+				                                <input type="radio" name="41" class="rating" value="4" checked />
+				                                <input type="radio" name="51" class="rating" value="5" />
+				                            </div>								
+											<span>2.08.2019</span>
+										</div>
+										<div class="b-news-item__img">
+											<iframe width="100%" height="176" src="https://www.youtube.com/embed/BKhV_p1r_MM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											<div class="b-news-item__img__wrap">
+												<button class="b-news-play"></button>
+											</div>
+										</div>
+										<div class="b-reviews-item__text">
+											<span>Видео отзыв от:</span>
+											<b>Оятуллох Кадиров </b>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+									<div class="b-reviews-item">
+										<div class="b-reviews-item__top">
+				                            <div class="star-rating">
+				                                <input type="radio" name="11" class="rating" value="1" disabled="disabled" checked />
+				                                <input type="radio" name="21" class="rating" value="2" checked />
+				                                <input type="radio" name="31" class="rating" value="3" checked />
+				                                <input type="radio" name="41" class="rating" value="4" checked />
+				                                <input type="radio" name="51" class="rating" value="5" />
+				                            </div>								
+											<span>2.08.2019</span>
+										</div>
+										<div class="b-news-item__img">
+											<iframe width="100%" height="176" src="https://www.youtube.com/embed/BKhV_p1r_MM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											<div class="b-news-item__img__wrap">
+												<button class="b-news-play"></button>
+											</div>
+										</div>
+										<div class="b-reviews-item__text">
+											<span>Видео отзыв от:</span>
+											<b>Оятуллох Кадиров </b>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+									<div class="b-reviews-item">
+										<div class="b-reviews-item__top">
+				                            <div class="star-rating">
+				                                <input type="radio" name="11" class="rating" value="1" disabled="disabled" checked />
+				                                <input type="radio" name="21" class="rating" value="2" checked />
+				                                <input type="radio" name="31" class="rating" value="3" checked />
+				                                <input type="radio" name="41" class="rating" value="4" checked />
+				                                <input type="radio" name="51" class="rating" value="5" />
+				                            </div>								
+											<span>2.08.2019</span>
+										</div>
+										<div class="b-news-item__img">
+											<iframe width="100%" height="176" src="https://www.youtube.com/embed/BKhV_p1r_MM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											<div class="b-news-item__img__wrap">
+												<button class="b-news-play"></button>
+											</div>
+										</div>
+										<div class="b-reviews-item__text">
+											<span>Видео отзыв от:</span>
+											<b>Оятуллох Кадиров </b>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+									<div class="b-reviews-item">
+										<div class="b-reviews-item__top">
+				                            <div class="star-rating">
+				                                <input type="radio" name="11" class="rating" value="1" disabled="disabled" checked />
+				                                <input type="radio" name="21" class="rating" value="2" checked />
+				                                <input type="radio" name="31" class="rating" value="3" checked />
+				                                <input type="radio" name="41" class="rating" value="4" checked />
+				                                <input type="radio" name="51" class="rating" value="5" />
+				                            </div>								
+											<span>2.08.2019</span>
+										</div>
+										<div class="b-news-item__img">
+											<iframe width="100%" height="176" src="https://www.youtube.com/embed/BKhV_p1r_MM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											<div class="b-news-item__img__wrap">
+												<button class="b-news-play"></button>
+											</div>
+										</div>
+										<div class="b-reviews-item__text">
+											<span>Видео отзыв от:</span>
+											<b>Оятуллох Кадиров </b>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+									<div class="b-reviews-item">
+										<div class="b-reviews-item__top">
+				                            <div class="star-rating">
+				                                <input type="radio" name="11" class="rating" value="1" disabled="disabled" checked />
+				                                <input type="radio" name="21" class="rating" value="2" checked />
+				                                <input type="radio" name="31" class="rating" value="3" checked />
+				                                <input type="radio" name="41" class="rating" value="4" checked />
+				                                <input type="radio" name="51" class="rating" value="5" />
+				                            </div>								
+											<span>2.08.2019</span>
+										</div>
+										<div class="b-news-item__img">
+											<iframe width="100%" height="176" src="https://www.youtube.com/embed/BKhV_p1r_MM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											<div class="b-news-item__img__wrap">
+												<button class="b-news-play"></button>
+											</div>
+										</div>
+										<div class="b-reviews-item__text">
+											<span>Видео отзыв от:</span>
+											<b>Оятуллох Кадиров </b>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane" id="tab22">
+					<div class="b-reviews-content b-reviews-content__two">
+						<div class="container">
+							<div class="row">
+								<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+									<div class="b-reviews-block">
+										<div class="b-reviews-block__img">
+											<img src="images/b-reviews-block__img.jpg" alt="">
+										</div>
+										<div class="b-reviews-block__content">
+											<div class="b-reviews-block__top">
+												<span>4  /  5</span>
+					                            <div class="star-rating">
+					                                <input type="radio" name="11" class="rating" value="1" disabled="disabled" checked />
+					                                <input type="radio" name="21" class="rating" value="2" checked />
+					                                <input type="radio" name="31" class="rating" value="3" checked />
+					                                <input type="radio" name="41" class="rating" value="4" checked />
+					                                <input type="radio" name="51" class="rating" value="5" />
+					                            </div>								
+											</div>
+											<div class="b-reviews-block__row">
+												<p>Габдуллин Леонард</p>
+												<span>2.08.2019</span>
+											</div>
+											<ul class="b-rating">
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star"></span></li>
+											</ul>	
+											<div class="b-reviews-block__content">
+												<p>Отличный товар. Покупал в интернет - магазине “Коран ручка”. За консультацию отдельно спасибо! Консультант порекомендовал ручку QM8800. И я очень доволен.</p>
+											</div>										
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+									<div class="b-reviews-block">
+										<div class="b-reviews-block__img">
+											<img src="images/b-reviews-block__img2.jpg" alt="">
+										</div>
+										<div class="b-reviews-block__content">
+											<div class="b-reviews-block__top">
+												<span>4  /  5</span>
+					                            <div class="star-rating">
+					                                <input type="radio" name="11" class="rating" value="1" disabled="disabled" checked />
+					                                <input type="radio" name="21" class="rating" value="2" checked />
+					                                <input type="radio" name="31" class="rating" value="3" checked />
+					                                <input type="radio" name="41" class="rating" value="4" checked />
+					                                <input type="radio" name="51" class="rating" value="5" />
+					                            </div>								
+											</div>
+											<div class="b-reviews-block__row">
+												<p>Габдуллин Леонард</p>
+												<span>2.08.2019</span>
+											</div>
+											<ul class="b-rating">
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star"></span></li>
+											</ul>	
+											<div class="b-reviews-block__content">
+												<p>Отличный товар. Покупал в интернет - магазине “Коран ручка”. За консультацию отдельно спасибо! Консультант порекомендовал ручку QM8800. И я очень доволен.</p>
+											</div>										
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+									<div class="b-reviews-block">
+										<div class="b-reviews-block__img">
+											<img src="images/b-reviews-block__img3.jpg" alt="">
+										</div>
+										<div class="b-reviews-block__content">
+											<div class="b-reviews-block__top">
+												<span>4  /  5</span>
+					                            <div class="star-rating">
+					                                <input type="radio" name="11" class="rating" value="1" disabled="disabled" checked />
+					                                <input type="radio" name="21" class="rating" value="2" checked />
+					                                <input type="radio" name="31" class="rating" value="3" checked />
+					                                <input type="radio" name="41" class="rating" value="4" checked />
+					                                <input type="radio" name="51" class="rating" value="5" />
+					                            </div>								
+											</div>
+											<div class="b-reviews-block__row">
+												<p>Габдуллин Леонард</p>
+												<span>2.08.2019</span>
+											</div>
+											<ul class="b-rating">
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star"></span></li>
+											</ul>	
+											<div class="b-reviews-block__content">
+												<p>Отличный товар. Покупал в интернет - магазине “Коран ручка”. За консультацию отдельно спасибо! Консультант порекомендовал ручку QM8800. И я очень доволен.</p>
+											</div>										
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+									<div class="b-reviews-block">
+										<div class="b-reviews-block__img">
+											<img src="images/b-reviews-block__img4.jpg" alt="">
+										</div>
+										<div class="b-reviews-block__content">
+											<div class="b-reviews-block__top">
+												<span>4  /  5</span>
+					                            <div class="star-rating">
+					                                <input type="radio" name="11" class="rating" value="1" disabled="disabled" checked />
+					                                <input type="radio" name="21" class="rating" value="2" checked />
+					                                <input type="radio" name="31" class="rating" value="3" checked />
+					                                <input type="radio" name="41" class="rating" value="4" checked />
+					                                <input type="radio" name="51" class="rating" value="5" />
+					                            </div>								
+											</div>
+											<div class="b-reviews-block__row">
+												<p>Габдуллин Леонард</p>
+												<span>2.08.2019</span>
+											</div>
+											<ul class="b-rating">
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star"></span></li>
+											</ul>	
+											<div class="b-reviews-block__content">
+												<p>Отличный товар. Покупал в интернет - магазине “Коран ручка”. За консультацию отдельно спасибо! Консультант порекомендовал ручку QM8800. И я очень доволен.</p>
+											</div>										
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+									<div class="b-reviews-block">
+										<div class="b-reviews-block__img">
+											<img src="images/b-reviews-block__img5.jpg" alt="">
+										</div>
+										<div class="b-reviews-block__content">
+											<div class="b-reviews-block__top">
+												<span>4  /  5</span>
+					                            <div class="star-rating">
+					                                <input type="radio" name="11" class="rating" value="1" disabled="disabled" checked />
+					                                <input type="radio" name="21" class="rating" value="2" checked />
+					                                <input type="radio" name="31" class="rating" value="3" checked />
+					                                <input type="radio" name="41" class="rating" value="4" checked />
+					                                <input type="radio" name="51" class="rating" value="5" />
+					                            </div>								
+											</div>
+											<div class="b-reviews-block__row">
+												<p>Габдуллин Леонард</p>
+												<span>2.08.2019</span>
+											</div>
+											<ul class="b-rating">
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star"></span></li>
+											</ul>	
+											<div class="b-reviews-block__content">
+												<p>Отличный товар. Покупал в интернет - магазине “Коран ручка”. За консультацию отдельно спасибо! Консультант порекомендовал ручку QM8800. И я очень доволен. Отличный товар. Покупал в интернет - магазине “Коран ручка”. За консультацию отдельно спасибо! </p>
+											</div>										
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+									<div class="b-reviews-block">
+										<div class="b-reviews-block__img">
+											<img src="images/b-reviews-block__img6.jpg" alt="">
+										</div>
+										<div class="b-reviews-block__content">
+											<div class="b-reviews-block__top">
+												<span>4  /  5</span>
+					                            <div class="star-rating">
+					                                <input type="radio" name="11" class="rating" value="1" disabled="disabled" checked />
+					                                <input type="radio" name="21" class="rating" value="2" checked />
+					                                <input type="radio" name="31" class="rating" value="3" checked />
+					                                <input type="radio" name="41" class="rating" value="4" checked />
+					                                <input type="radio" name="51" class="rating" value="5" />
+					                            </div>								
+											</div>
+											<div class="b-reviews-block__row">
+												<p>Габдуллин Леонард</p>
+												<span>2.08.2019</span>
+											</div>
+											<ul class="b-rating">
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star b-star__full"></span></li>
+												<li><span class="b-star"></span></li>
+											</ul>	
+											<div class="b-reviews-block__content">
+												<p>Отличный товар. Покупал в интернет - магазине “Коран ручка”. За консультацию отдельно спасибо! Консультант порекомендовал ручку QM8800. И я очень доволен.</p>
+											</div>										
+										</div>
+									</div>
+								</div>																																								
+							</div>
+						</div>
+					</div>
+					<button class="btn-rev btn-yellow">Смотреть все отзывы</button>
+				</div>				
+			</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-xl">
+					<div class="b-pagination">
+						<button class="btn-prev pag-btn"></button>
+						<ul>
+							<li><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li><a href="">5</a></li>
+							<li class="active"><a href="">6</a></li>
+							<li><a href="">7</a></li>
+							<li><a href="">8</a></li>
+							<li><a href="">9</a></li>
+						</ul>
+						<button class="btn-next pag-btn"></button>
+					</div>
+					<div class="b-reviews-bottom">
+						<div class="b-title">
+							<div class="b-title-wrap">
+								<bdo dir="ltr">ترك التعليق</bdo>
+							</div>
+							<h1>Оставить отзыв</h1>
+						</div>
+						<div class="b-reviews-form">
+							<form action="">
+								<div class="b-reviews-form__row">
+									<input class="b-reviews-form__input" type="text" placeholder="Имя">
+									<input class="b-reviews-form__input" type="text" placeholder="Ел.Почта*">
+								</div>
+								<span>Ваш отзыв</span>
+								<textarea class="b-reviews-textarea"></textarea>
+								<div class="b-reviews-form__bottom">
+									<div class="b-reviews-form__left">
+										<p>Оценка:</p>
+										<div class="b-reviews-form__left__wrap">
+				                            <div class="star-rating">
+				                                <input type="radio" name="w1" class="rating" value="1" disabled="disabled" checked />
+				                                <input type="radio" name="w2" class="rating" value="2" checked />
+				                                <input type="radio" name="w3" class="rating" value="3" checked />
+				                                <input type="radio" name="w4" class="rating" value="4" checked />
+				                                <input type="radio" name="w5" class="rating" value="5" />
+				                            </div>								
+											<strong>4  /  5</strong>
+										</div>
+									</div>
+									<div class="b-reviews-form__right">
+										<div class="b-checkbox">
+											<input type="checkbox" checked id="n2" name="n4" />
+											<label for="n2"><span></span><i>Согласен с <a href="">обработкой<br/>
+											персональных данных</a></i></label>  
+										</div>									
+										<div class="b-file">
+											<input type="file" value="">
+										</div>
+										<input class="b-reviews-form__btn" type="submit" value="Опубликовать">
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+
+	<div class="b-text-bottom">
+		<div class="row">
+			<div class="col-xl">
+				<ul>
+					<li>
+						<span class="b-text-ico">
+							<img src="images/b-text-ico.svg" alt="">
+						</span>
+						<b>5</b>
+					</li>
+					<li>
+						<span class="b-text-ico">
+							<img src="images/b-text-ico2.svg" alt="">
+						</span>
+						<b>217</b>
+					</li>
+					<li>
+						<span class="b-text-ico">
+							<img src="images/b-text-ico3.svg" alt="">
+						</span>
+						<b>6</b>
+					</li>
+					<li>
+						<span class="b-text-ico">
+							<img src="images/b-text-ico4.svg" alt="">
+						</span>
+						<b></b>
+					</li>																					
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+	<!-- begin b-footer -->
+	<footer class="b-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl">
+					<div class="b-footer-content">
+						<div class="b-footer-left">
+							<a href="" class="b-footer-logo">
+								<img src="images/b-footer-logo.svg" alt="">
+							</a>
+							<div class="b-footer-xs"></div>
+							<a href="" class="b-footer-link">Политика конфиденциальности</a>
+							<div class="b-footer-social">
+								<span>Мы в соц сетях:</span>
+								<ul>
+									<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+									<li><a href=""><i class="fab fa-vk"></i></a></li>
+									<li><a href=""><i class="fab fa-odnoklassniki"></i></a></li>
+									<li><a href=""><i class="fab fa-twitter"></i></a></li>
+									<li><a href=""><i class="fab fa-instagram"></i></a></li>
+									<li><a href=""><i class="fab fa-youtube"></i></a></li>
+								</ul>
+							</div>
+							<a href="" class="b-footer-block">
+								<div class="b-footer-block__img">
+									<img src="images/web-avenue.svg" alt="">
+								</div>
+								<span>Создание и продвижение сайтов</span>
+							</a>
+						</div>
+						<div class="b-footer-wrap">
+							<div class="b-footer-col__wrap">
+								<div class="b-footer-col">
+									<b>Каталог</b>
+									<ul>
+										<li><a href="">Эконом вариант</a></li>
+										<li><a href="">С ЖК экраном</a></li>
+										<li><a href="">С большым мусхафом</a></li>
+										<li><a href="">Для подарка</a></li>
+										<li><a href="">VIP модели</a></li>
+										<li><a href="">Разное</a></li>
+									</ul>
+								</div>
+								<div class="b-footer-col">
+									<b>Компания</b>
+									<ul>
+										<li><a href="">О компании </a></li>
+										<li><a href="">Доставка и оплата</a></li>
+										<li><a href="">Акции</a></li>
+										<li><a href="">Новости</a></li>
+										<li><a href="">Отзывы</a></li>
+										<li><a href="">Контакты</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="b-footer-content__bottom">
+								<ul>
+									<li><a href=""><img src="images/b-footer-ico.svg" alt=""></a></li>
+									<li><a href=""><img src="images/b-footer-ico2.svg" alt=""></a></li>
+									<li><a href=""><img src="images/b-footer-ico3.svg" alt=""></a></li>
+									<li><a href=""><img src="images/b-footer-ico4.svg" alt=""></a></li>
+									<li><a href=""><img src="images/b-footer-ico5.svg" alt=""></a></li>
+									<li><a href=""><img src="images/b-footer-ico6.svg" alt=""></a></li>
+									<li><a href=""><img src="images/b-footer-ico7.svg" alt=""></a></li>
+									<li><a href=""><img src="images/b-footer-ico8.svg" alt=""></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="b-footer-map">
+							<div id="map"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end b-footer -->
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv9-H5GwlZA4EkUorU0gGHrq0H4pFMPS4"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.inputmask.js"></script>
+	<script src="js/rating.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
