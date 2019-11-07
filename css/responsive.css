@@ -191,6 +191,12 @@
 	.b-profile-edit-form__buttons {
 		max-width: 357px;
 	}
+	.b-profile-orders__col--big {
+		max-width: 730px;
+	}
+	.b-order-content {
+		max-width: 505px;
+	}
 }	
 @media (max-width: 991px){	
 	.b-header-nav ul li{
@@ -438,6 +444,19 @@
 	}
 	.b-profile-password-form__buttons {
 		max-width: 100%;
+	}
+	.b-profile-orders__col--big {
+		max-width: 490px;
+	}
+	.b-order-content {
+		max-width: 265px;
+		justify-content: space-between;
+	}
+	.b-order-content__price {
+		margin-right: 0;
+	}
+	.b-order-content__multiprice {
+		margin-top: 20px;
 	}
 }
 @media (max-width: 767px) {
@@ -1331,6 +1350,48 @@
 	.b-profile-edit-form {
 		margin-bottom: 40px;
 	}
+	.b-profile-orders__col--small,
+	.b-profile-orders__col--big {
+		max-width: 100%;
+	}
+	.b-orders-item__info {
+		padding: 10px 20px;
+	}
+	.b-orders-item__info .b-order-number {
+		margin-right: 70px;
+	}
+	.b-orders-item__content {
+		padding: 20px 10px;
+	}
+	.b-order-photo {
+		display: none;
+	}
+	.b-order-content {
+		max-width: 100%;
+	}
+	.b-order-content__photo-mobile {
+		display: block;
+		flex: 0 0 100%;
+		max-width: 100px;
+		margin-bottom: 10px;
+	}
+	.b-order-content__title {
+		max-width: 65%;
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	.b-order-content__multiprice {
+		flex: 0 0 100%;
+		max-width: 100%;
+		text-align: right;
+	}
+	.b-orders-item__delivery {
+		padding: 20px 10px;
+	}
+	.b-orders-item__total {
+		padding: 20px 10px;
+		justify-content: space-between;
+	}
 }
 @media (max-width: 680px) {
 
@@ -1365,6 +1426,9 @@
 	.b-profile-edit-form__buttons .b-reviews-form__btn:last-child,
 	.b-profile-password-form__buttons .b-reviews-form__btn:last-child {
 		margin-bottom: 0;
+	}
+	.b-order-content__title {
+		max-width: 60%;
 	}
 }
 @media (max-width: 320px) {
