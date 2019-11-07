@@ -412,6 +412,12 @@
 		width: auto;
 		margin: 60px 5px 0 5px;
 	}
+	.b-profile-nav {
+		padding: 30px 10px;
+	}
+	.b-profile-links li {
+		margin-bottom: 30px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -1274,7 +1280,34 @@
 		font-size: 16px;
 		line-height: 24px;
 	}
-
+	.b-profile-page {
+		padding: 40px 0;
+	}
+	.b-profile-nav {
+		max-width: 100%;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	.b-profile-nav a {
+		font-size: 16px;
+	}
+	.b-profile-info {
+		max-width: 100%;
+		margin-bottom: 40px;
+	}
+	.b-info-table__item--highlight {
+		font-size: 12px;
+	}
+	.b-info-table__row:last-child {
+		padding-bottom: 20px;
+		border-bottom: 1px solid #DEC593;
+	}
+	.b-profile-links {
+		padding-top: 0;
+	}
+	.b-profile-links li {
+		margin-bottom: 30px;
+	}
 }
 @media (max-width: 680px) {
 

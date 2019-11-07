@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Title</title>
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,600|Roboto+Slab:400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
+      rel="stylesheet"
+    />
+    <link href="css/slick.css" rel="stylesheet" />
+    <link href="css/rating.css" rel="stylesheet" />
+    <link href="css/fontawesome-all.css" rel="stylesheet" />
+    <link href="css/jquery.fancybox.min.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="webfonts/fonts.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    <link href=”images/favicon.ico” rel=”shortcut icon” type=”image/x-icon”>
+    <link rel="shortcut icon" href="#" />
+    <link rel="shortcut icon" href="images/logo.svg" type="image/png" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- modal-callback -->
+    <div
+      class="modal modal-callback fade"
+      id="modal-callback"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-callback"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <button data-dismiss="modal" class="modal-close"></button>
+        <div class="b-modal-top">
+          <span>Обратный звонок</span>
+        </div>
+        <div class="b-modal-content">
+          <form action="">
+            <input class="b-cart-input" type="text" placeholder="Имя*" />
+            <input class="b-cart-input b-tel" type="text" placeholder="Телефон*" />
+            <textarea class="b-cart-textarea"></textarea>
+            <input class="b-modal-btn" type="submit" value="Отправить" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal-callback -->
+    <div
+      class="modal modal-callback fade"
+      id="modal-reg"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-reg"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <button data-dismiss="modal" class="modal-close"></button>
+        <div class="b-modal-top">
+          <span>Регистрация</span>
+        </div>
+        <div class="b-modal-content">
+          <form action="">
+            <input class="b-cart-input" type="text" placeholder="Имя*" />
+            <input class="b-cart-input" type="text" placeholder="Фамилия*" />
+            <input class="b-cart-input b-tel" type="text" placeholder="Телефон*" />
+            <input class="b-cart-input" type="text" placeholder="Эл. Почта" />
+            <input class="b-modal-btn" type="submit" value="Зарегистрироваться" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal-callback -->
+    <div
+      class="modal modal-callback fade"
+      id="modal-login"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-login"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <button data-dismiss="modal" class="modal-close"></button>
+        <div class="b-modal-top">
+          <span>Вход</span>
+        </div>
+        <div class="b-modal-content">
+          <form action="">
+            <input class="b-cart-input" type="text" placeholder="Эл. Почта" />
+            <input class="b-cart-input" type="text" placeholder="Пароль*" />
+            <input class="b-modal-btn" type="submit" value="Войти" />
+          </form>
+          <div class="b-modal-top b-modal-top__two">
+            <span>Вход через соц сети</span>
+          </div>
+          <ul>
+            <li>
+              <a href=""><i class="fab fa-vk"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-odnoklassniki"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-google-plus-g"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal-callback -->
+    <div
+      class="modal b-modal-item fade"
+      id="modal-item"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal-item"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <button data-dismiss="modal" class="modal-close"></button>
+        <div class="b-modal-item__top">
+          <span>Корзина</span>
+        </div>
+        <div class="b-cart-item">
+          <div class="b-cart-item__block">
+            <div class="b-cart-item__img">
+              <img src="images/b-cart-item__img2.jpg" alt="" />
+            </div>
+            <div class="b-cart-item__wrap">
+              <b>Электронная ручка PQ8800</b>
+              <ul>
+                <li>Тип упаковки:<span>Деревянная коробка</span></li>
+              </ul>
+              <p>+4 500 руб.</p>
+            </div>
+          </div>
+          <div class="b-quantity">
+            <button class="b-quantity-btn minus">-</button>
+            <input class="b-quantity-input" type="text" value="1" />
+            <button class="b-quantity-btn plus">+</button>
+          </div>
+          <div class="b-cart-item__price">
+            <b>22 500 ₽</b>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="b-container b-inner">
+      <!-- begin b-header -->
+      <header class="b-header">
+        <div class="b-header-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl">
+                <div class="b-header-nav">
+                  <ul>
+                    <li><a href="">О компании</a></li>
+                    <li><a href="">Доставка и оплата </a></li>
+                    <li><a href="">Акции</a></li>
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Отзывы</a></li>
+                    <li><a href="">Контакты</a></li>
+                  </ul>
+                </div>
+                <div class="b-header-link">
+                  <ul>
+                    <li data-toggle="modal" data-target="#modal-login">Вход</li>
+                    <li>/</li>
+                    <li data-toggle="modal" data-target="#modal-reg">Регистрация</li>
+                  </ul>
+                  <button class="btn-share"></button>
+                </div>
+                <div class="b-header-xs">
+                  <button class="btn-back"></button>
+                  <a href="tel:8 800 456 78 90">8 800 456 78 90</a>
+                  <button class="btn-share"></button>
+                </div>
+                <div class="b-header-wrap"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="b-header-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl">
+                <div class="b-header-content__wrap">
+                  <a href="" class="b-logo"></a>
+                  <div class="b-header-contacts">
+                    <div class="b-header-contacts__item">
+                      <a href="tel:8 123 456 78 90">8 123 456 78 90</a>
+                      <span></span>
+                    </div>
+                    <div class="b-header-contacts__item">
+                      <a href="tel:8 800 456 78 90">8 800 456 78 90</a>
+                      <span>бесплатный звонок по РФ</span>
+                    </div>
+                    <button class="btn-callback btn-yellow">Написать нам</button>
+                  </div>
+                  <div class="b-header-cart__wrap">
+                    <div class="b-header-cart">
+                      <div class="b-header-cart__ico">
+                        <div class="b-header-cart__n">
+                          <span>2</span>
+                        </div>
+                      </div>
+                      <div class="b-header-cart__content">
+                        <span>Корзина:</span>
+                        <p>35 899 ₽</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end b-header -->
+
+      <div class="b-breadcreambs">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl">
+              <ul>
+                <li><a href="">Главная</a><i>/</i></li>
+                <li><a href="">Мой кабинет</a><i>/</i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="b-profile-page">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl">
+              <div class="b-title">
+                <h1>Мой кабинет</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3">
+              <nav class="b-profile-nav">
+                <ul>
+                  <li><a class="active" href="#">Мои данные</a></li>
+                  <li><a href="#">История заказов</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="col-md-6">
+              <div class="b-profile-info">
+                <div class="b-info-table">
+                  <div class="b-info-table__row">
+                    <div class="b-info-table__item b-info-table__item--highlight">
+                      <span>Имя</span>
+                    </div>
+                    <div class="b-info-table__item">
+                      <span>Александр</span>
+                    </div>
+                  </div>
+                  <div class="b-info-table__row">
+                    <div class="b-info-table__item b-info-table__item--highlight">
+                      <span>Ел.почта</span>
+                    </div>
+                    <div class="b-info-table__item">
+                      <span>Alexandr123@gmail.ru</span>
+                    </div>
+                  </div>
+                  <div class="b-info-table__row">
+                    <div class="b-info-table__item b-info-table__item--highlight">
+                      <span>Телефон</span>
+                    </div>
+                    <div class="b-info-table__item">
+                      <span>+ 7 768 775 25 53</span>
+                    </div>
+                  </div>
+                  <div class="b-info-table__row">
+                    <div class="b-info-table__item b-info-table__item--highlight">
+                      <span>Адрес </span>
+                    </div>
+                    <div class="b-info-table__item">
+                      <span>г. Москва ул. 1-ая ямская 3/7 </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="b-profile-links">
+                <ul>
+                  <li><a class="active" href="#">Редактировать свои данные</a></li>
+                  <li><a href="#">Сменить пароль</a></li>
+                  <li><a href="#">Выход</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- begin b-footer -->
+    <footer class="b-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl">
+            <div class="b-footer-content">
+              <div class="b-footer-left">
+                <a href="" class="b-footer-logo">
+                  <img src="images/b-footer-logo.svg" alt="" />
+                </a>
+                <div class="b-footer-xs"></div>
+                <a href="" class="b-footer-link">Политика конфиденциальности</a>
+                <div class="b-footer-social">
+                  <span>Мы в соц сетях:</span>
+                  <ul>
+                    <li>
+                      <a href=""><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fab fa-vk"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fab fa-odnoklassniki"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href=""><i class="fab fa-youtube"></i></a>
+                    </li>
+                  </ul>
+                </div>
+                <a href="" class="b-footer-block">
+                  <div class="b-footer-block__img">
+                    <img src="images/web-avenue.svg" alt="" />
+                  </div>
+                  <span>Создание и продвижение сайтов</span>
+                </a>
+              </div>
+              <div class="b-footer-wrap">
+                <div class="b-footer-col__wrap">
+                  <div class="b-footer-col">
+                    <b>Каталог</b>
+                    <ul>
+                      <li><a href="">Эконом вариант</a></li>
+                      <li><a href="">С ЖК экраном</a></li>
+                      <li><a href="">С большым мусхафом</a></li>
+                      <li><a href="">Для подарка</a></li>
+                      <li><a href="">VIP модели</a></li>
+                      <li><a href="">Разное</a></li>
+                    </ul>
+                  </div>
+                  <div class="b-footer-col">
+                    <b>Компания</b>
+                    <ul>
+                      <li><a href="">О компании </a></li>
+                      <li><a href="">Доставка и оплата</a></li>
+                      <li><a href="">Акции</a></li>
+                      <li><a href="">Новости</a></li>
+                      <li><a href="">Отзывы</a></li>
+                      <li><a href="">Контакты</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="b-footer-content__bottom">
+                  <ul>
+                    <li>
+                      <a href=""><img src="images/b-footer-ico.svg" alt=""/></a>
+                    </li>
+                    <li>
+                      <a href=""><img src="images/b-footer-ico2.svg" alt=""/></a>
+                    </li>
+                    <li>
+                      <a href=""><img src="images/b-footer-ico3.svg" alt=""/></a>
+                    </li>
+                    <li>
+                      <a href=""><img src="images/b-footer-ico4.svg" alt=""/></a>
+                    </li>
+                    <li>
+                      <a href=""><img src="images/b-footer-ico5.svg" alt=""/></a>
+                    </li>
+                    <li>
+                      <a href=""><img src="images/b-footer-ico6.svg" alt=""/></a>
+                    </li>
+                    <li>
+                      <a href=""><img src="images/b-footer-ico7.svg" alt=""/></a>
+                    </li>
+                    <li>
+                      <a href=""><img src="images/b-footer-ico8.svg" alt=""/></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="b-footer-map">
+                <div id="map"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end b-footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv9-H5GwlZA4EkUorU0gGHrq0H4pFMPS4"
+    ></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.inputmask.js"></script>
+    <script src="js/rating.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

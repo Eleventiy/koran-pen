@@ -5044,3 +5044,99 @@ bdo{
 	color: #ffffff;
 	transition: 0.3s;
 }
+
+/* -------------- page b-profile -------------- */
+.b-profile-page {
+	padding: 40px 0 90px;
+}
+.b-profile-nav {
+	display: block;
+	width: 100%;
+	max-width: 180px;
+	padding: 30px 30px 30px 40px;
+	border: 2px solid #DEC593;
+	border-radius: 3px;
+}
+.b-profile-nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.b-profile-nav li {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.b-profile-nav li:last-child {
+	margin-bottom: 0;
+}
+.b-profile-nav a {
+	font-family: 'Lato-Bold';
+	font-weight: 700;
+	font-size: 13px;
+	color: #333333;
+	transition: all 0.3s;
+	text-decoration: none;
+}
+.b-profile-nav a:hover,
+.b-profile-nav a.active {
+	color: #DEC593;
+}
+.b-profile-info {
+	display: block;
+	width: 100%;
+	max-width: 480px;
+}
+.b-info-table__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #DEC593;
+}
+.b-info-table__row:last-child {
+	padding-bottom: 0;
+	margin-bottom: 0;
+	border-bottom: 0;
+}
+.b-info-table__item {
+	font-family: 'Lato-Regular';
+	font-weight: 400;
+	font-size: 14px;
+	text-align: right;
+	color: #333333;
+}
+.b-info-table__item--highlight {
+	font-size: 13px;
+	color: #BC8822;
+}
+.b-profile-links {
+	padding-top: 25px;
+}
+.b-profile-links ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.b-profile-links li {
+	display: block;
+	width: 100%;
+	margin-bottom: 40px;
+	line-height: 1;
+}
+.b-profile-links li:last-child {
+	margin-bottom: 0;
+}
+.b-profile-links a {
+	font-family: 'Lato-Regular';
+	font-weight: 400;
+	font-size: 16px;
+	text-decoration: underline;
+	color: #4F4F4F;
+	transition: all 0.3s;
+}
+.b-profile-links a:hover,
+.b-profile-links a.active {
+	color: #BC8822;
+}
