@@ -5267,6 +5267,10 @@ bdo{
 	color: #BC8822;
 	margin-bottom: 20px;
 }
+.b-order-content__title a {
+	color: #BC8822;
+	text-decoration: none;
+}
 .b-order-content__price {
 	font-family: 'Lato-Regular', sans-serif;
 	font-weight: 400;
