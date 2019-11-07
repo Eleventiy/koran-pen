@@ -1762,8 +1762,7 @@ bdo{
 .b-footer-xs{
 	display: none;
 }
-.b-text-bottom,
-.b-text-bottom-reviews {
+.b-text-bottom {
 	display: none;
 }
 
@@ -5269,7 +5268,7 @@ bdo{
 }
 .b-order-content__title a {
 	color: #BC8822;
-	text-decoration: none;
+	text-decoration: none; 
 }
 .b-order-content__price {
 	font-family: 'Lato-Regular', sans-serif;

@@ -1376,6 +1376,11 @@
 		align-items: center;
 		padding: 10px;
 	}
+	.b-text-bottom ul li a {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+	}
 	.b-text-ico{
 		display: block;
 		margin: 0 10px 0 0;
