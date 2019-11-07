@@ -755,15 +755,18 @@ $('.btn-more[href*="#"]').click(function() {
     ]
   });
 
-  $('.open-reviews-link').click(function() {
-    if ($(this).hasClass('active')) {
-      $(this).removeClass('active');
-    } else {
-      $(this).addClass('active');
-    }
-  });
+  // $('.open-reviews-link').click(function() {
+  //   if ($(this).hasClass('active')) {
+  //     $(this).removeClass('active');
+  //   } else {
+  //     $(this).addClass('active');
+  //   }
+  // });
 
   $('.open-reviews-link a').click(function() {
+    // $(this)
+    //   .parent()
+    //   .toggleClass('active');
     $('html, body').animate(
       {
         scrollTop: $($.attr(this, 'href')).offset().top
