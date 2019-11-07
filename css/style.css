@@ -5202,3 +5202,147 @@ bdo{
 .b-profile-password-form__buttons .b-reviews-form__btn:last-child {
 	margin-right: 0;
 }
+
+/* -------------- page b-profile-orders -------------- */
+.b-profile-orders-page {
+	padding: 40px 0 80px;
+}
+.b-profile-orders__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.b-profile-orders__col {
+	flex: 0 0 100%;
+}
+.b-profile-orders__col--small {
+	max-width: 180px;
+}
+.b-profile-orders__col--big {
+	max-width: 980px;
+}
+.b-orders-item {
+	border: 2px solid #DEC593;
+	border-radius: 3px;
+	margin-bottom: 20px;
+}
+.b-orders-item:last-child {
+	margin-bottom: 0;
+}
+.b-orders-item__info {
+	display: flex;
+	align-items: center;
+	padding: 10px 30px;
+	border-bottom: 1px solid #DEC593;
+	font-family: 'Lato-Regular', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1;
+	color: #333333;
+}
+.b-orders-item__info .b-order-number {
+	margin-right: 90px;
+}
+.b-orders-item__content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	padding: 20px;
+	padding-left: 50px;
+	border-bottom: 1px solid #DEC593;
+}
+.b-order-photo {
+	flex: 0 0 100%;
+	max-width: 100px;
+	margin-right: 50px;
+}
+.b-order-content {
+	flex: 0 0 100%;
+	max-width: 755px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.b-order-content__photo-mobile {
+	display: none;
+}
+.b-order-content__title {
+	flex: 0 0 100%;
+	max-width: 100%;
+	font-family: 'Roboto Slab', sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 1;
+	color: #BC8822;
+	margin-bottom: 20px;
+}
+.b-order-content__price {
+	font-family: 'Lato-Regular', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1;
+	color: #000000;
+	margin-right: 145px;
+}
+.b-order-content__price .big {
+	font-size: 24px;
+}
+.b-order-content__price .price {
+	font-family: "Oswald", sans-serif;
+}
+.b-order-content__count {
+	font-family: 'Lato-Regular', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1;
+	color: #000000;
+}
+.b-order-content__multiprice {
+	font-family: 'Lato-Regular', sans-serif;
+	margin-left: auto;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 1;
+	color: #000000;	
+}
+.b-order-content__multiprice .price {
+	font-family: 'Oswald', sans-serif;
+}
+.b-orders-item__delivery {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 20px;
+	padding-left: 200px;
+	border-bottom: 1px solid #DEC593;
+}
+.b-order-delivery-text,
+.b-order-total-text {
+	font-family: 'Lato-Regular', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1;
+	color: #000000;
+}
+.b-order-delivery-price,
+.b-order-total-price {
+	font-family: 'Lato-Regular', sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 1;
+	color: #000000;
+}
+.b-order-delivery-price .price,
+.b-order-total-price .price {
+	font-family: 'Oswald', sans-serif;
+}
+.b-orders-item__total {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 10px 20px 15px 10px;	
+}
+.b-order-total-text {
+	margin-right: 65px;
+}
