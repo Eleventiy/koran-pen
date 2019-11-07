@@ -755,12 +755,21 @@ $('.btn-more[href*="#"]').click(function() {
     ]
   });
 
-  // Write code here
   $('.open-reviews-link').click(function() {
     if ($(this).hasClass('active')) {
       $(this).removeClass('active');
     } else {
       $(this).addClass('active');
     }
+  });
+
+  $('.open-reviews-link a').click(function() {
+    $('html, body').animate(
+      {
+        scrollTop: $($.attr(this, 'href')).offset().top
+      },
+      500
+    );
+    return false;
   });
 });
